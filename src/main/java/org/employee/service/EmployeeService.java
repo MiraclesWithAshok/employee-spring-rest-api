@@ -49,5 +49,9 @@ public class EmployeeService {
 		
 		
 	}
+	public  List<EmployeeDetails> getDetailsBasedOnWithoutPrimarykey(String name) {
+		return empDAO.gettingDetailsBasedOnWithoutPrimarykey(name);
+		
+	}
 
 }

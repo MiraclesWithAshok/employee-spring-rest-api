@@ -90,6 +90,20 @@ public class EmployeeController {
 		
 		
 	}
+	//	@GetMapping("/search/{variable}")
+//	public List<EmployeeDetails> displayDetailsBasedOnWithoutPrimarykey(@PathVariable String variable) {
+//		
+//		List<EmployeeDetails>all =empService.getDetailsBasedOnWithoutPrimarykey(variable);
+//		System.out.println(all);
+//		return all;
+//	}
+	@GetMapping("/search/{variable}")
+	public List<EmployeeDetails> displayDetailsBasedOnWithoutPrimarykey(@PathVariable String variable) {
+		
+		List<EmployeeDetails>all =empService.getDetailsBasedOnWithoutPrimarykey(variable);
+		System.out.println(all);
+		return all;
+	}
 	//next exception ni postman lo oka format lo manaki nacchinattu cupinchadam yela...
 	
 	

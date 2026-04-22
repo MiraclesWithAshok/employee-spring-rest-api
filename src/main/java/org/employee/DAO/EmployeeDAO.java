@@ -49,5 +49,11 @@ public class EmployeeDAO {
 		}
 		
 	}
+	public  List<EmployeeDetails> gettingDetailsBasedOnWithoutPrimarykey(String name) {
+		return empRepo.getByEmployeeNameOrDept(name);
+		
+
+		
+	}
 
 }
